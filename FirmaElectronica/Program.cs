@@ -11,6 +11,7 @@ namespace FirmaElectronica
         static void Main(string[] args)
         {
             string ruta = "";
+            string archivo = "";
         }
     }
 }
