@@ -10,11 +10,11 @@ namespace FirmaElectronica
     {
         static void Main(string[] args)
         {
-            string pathArchivo = "C:\\FacturacionElectronica\\Docs_Generados\\FA1903202101099034750600120010010000235839999999911.xml";//RUTA DEL ARCHIVO XML INCLUIDO NOMBRE
+            string pathArchivo = "C:\\FacturacionElectronica\\Docs_Generados\\FA2403202101093076400600110010010000000371234567812.xml";//RUTA DEL ARCHIVO XML INCLUIDO NOMBRE
             string pathFirma = "C:\\GroupTechnology\\archivo.p12"; //RUTA DE LA FIRMA ELECTRONICA INCLUIDO NOMBRE DEL ARCHIVO
             string claveFirma = ""; //CLAVE DE LA FIRMA ELECTRONICA
             string pathArchivoFirmado = "C:\\FacturacionElectronica\\Docs_Firmados"; //RUTA DONDE SE ALMACENARA EL ARCHIVO FIRMADO
-            string nombreArchivoSalida = "FA1903202101099034750600120010010000235839999999911.xml";
+            string nombreArchivoSalida = "FA2403202101093076400600110010010000000371234567812.xml";
 
             string mensaje = "";
 
@@ -22,7 +22,18 @@ namespace FirmaElectronica
             {
                 //INSTANCIAMOS LA CLASE PARA SER USADA
                 FirmarXML firma = new FirmarXML();
-                if (firma.Firmar(pathFirma, claveFirma, pathArchivo, pathArchivoFirmado+@"\"+nombreArchivoSalida,ref mensaje)){
+                //FIRMADO ANTIGUO SOLO PRODUCCION
+                //if (firma.Firmar(pathFirma, claveFirma, pathArchivo, pathArchivoFirmado+@"\"+nombreArchivoSalida,ref mensaje)){
+                //    Console.WriteLine("Archivo firmado con exito");
+                //}
+                //else
+                //{
+                //    Console.WriteLine(mensaje);
+                //}
+
+                //NUEVO FIRMADO PRUEBAS Y PRODUCCION
+                if (firma.SignXml(pathFirma, claveFirma, pathArchivo, pathArchivoFirmado + @"\" + nombreArchivoSalida, ref mensaje))
+                {
                     Console.WriteLine("Archivo firmado con exito");
                 }
                 else

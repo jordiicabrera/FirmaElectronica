@@ -60,6 +60,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Dll\commons-logging-1.1.dll</HintPath>
     </Reference>
+    <Reference Include="facturaE_additional, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\facturaE_additional.dll</HintPath>
+    </Reference>
     <Reference Include="IKVM.OpenJDK.Core, Version=0.42.0.6, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Dll\IKVM.OpenJDK.Core.dll</HintPath>
