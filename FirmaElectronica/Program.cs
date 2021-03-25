@@ -10,11 +10,11 @@ namespace FirmaElectronica
     {
         static void Main(string[] args)
         {
-            string pathArchivo = "";//RUTA DEL ARCHIVO XML
-            string pathFirma = ""; //RUTA DE LA FIRMA ELECTRONICA  
+            string pathArchivo = "C:\\FacturacionElectronica\\Docs_Generados\\FA1903202101099034750600120010010000235839999999911.xml";//RUTA DEL ARCHIVO XML INCLUIDO NOMBRE
+            string pathFirma = "C:\\GroupTechnology\\blanca_nelly_ramon_ortega.p12"; //RUTA DE LA FIRMA ELECTRONICA INCLUIDO NOMBRE DEL ARCHIVO
             string claveFirma = ""; //CLAVE DE LA FIRMA ELECTRONICA
-            string pathArchivoFirmado = ""; //RUTA DONDE SE ALMACENARA EL ARCHIVO FIRMADO
-            string nombreArchivoSalida = "";
+            string pathArchivoFirmado = "C:\\FacturacionElectronica\\Docs_Firmados"; //RUTA DONDE SE ALMACENARA EL ARCHIVO FIRMADO
+            string nombreArchivoSalida = "FA1903202101099034750600120010010000235839999999911.xml";
 
             string mensaje = "";
 
