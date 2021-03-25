@@ -172,6 +172,14 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="Dll\bcmail-jdk15-1.43.dll" />
+    <Content Include="Dll\bcprov-jdk15-1.43.dll" />
+    <Content Include="Dll\bctsp-jdk15-1.43.dll" />
+    <Content Include="Dll\commons-codec-1.2.dll" />
+    <Content Include="Dll\commons-httpclient-3.0.1.dll" />
+    <Content Include="Dll\commons-lang-2.4.dll" />
+    <Content Include="Dll\commons-logging-1.1.dll" />
+    <Content Include="Dll\facturaE_additional.dll" />
     <Content Include="Dll\IKVM.OpenJDK.Core.dll" />
     <Content Include="Dll\IKVM.OpenJDK.Security.dll" />
     <Content Include="Dll\IKVM.OpenJDK.Text.dll" />
